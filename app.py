@@ -3,6 +3,7 @@
 from flask import Flask, render_template
 from flask import request, redirect
 from flask import url_for, abort, send_from_directory
+from flask_dropzone import Dropzone
 import os
 from settings import read_settings
 from storage.client import listFiles, uploadFile
@@ -23,7 +24,7 @@ logging.info(f'BLOB_CONTAINER: {BLOB_CONTAINER}')
 
 
 app = Flask(__name__)
-
+dropzone = Dropzone(app)
 
 @app.route('/')
 def index():
@@ -56,7 +57,8 @@ def upload_file():
     Filename: {filename}''')
 
     uploadFile(BLOB_ACCOUNT, BLOB_STORAGE_KEY, BLOB_CONTAINER, upload_file)
-    return redirect(url_for('files'))
+    # return redirect(url_for('files'))
+    return '', 204
 
 
 if __name__ == '__main__':

@@ -2,21 +2,33 @@
 <html>
   <head>
     <title>Files</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css">
+    {{ dropzone.load_css()}}
+    {{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px;') }}
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.css"> -->
   </head>
   <body>
-    <!-- <h1>File Upload</h1>
+
+    {{ dropzone.load_js()}}
+
+<!--
+    <h1>File Upload</h1>
     <form method="POST" action="" enctype="multipart/form-data">
       <p><input type="file" name="file"></p>
       <p><input type="submit" value="Submit"></p>
     </form> -->
 
 
-    <hr/>
+    <!-- <hr/>
     <h1>File Upload</h1>
     <form action="{{ url_for('upload_file') }}" class="dropzone">
     </form>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/min/dropzone.min.js"></script> -->
+
+    <hr/>
+
+    <h1> DropZone</h1>
+    {{ dropzone.create(action=url_for('upload_file'))}}
 
     <hr/>
 
