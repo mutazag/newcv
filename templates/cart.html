@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uploaded Images</title>
+  </head>
+  <body>
+    <!-- form to clear cache -->
+    <form action="/cart/clear" method="post">
+      <input type="submit" value="Clear Cache" />
+    </form>
+
+    <hr />
+
+    <form action="/cart/process" method="post">
+      {% for file in files %}
+      <input type="checkbox" name="selected-images" value="{{file.blob_url}}?{{file.blob_sas}}" />
+      <img src="{{file.blob_url}}?{{file.blob_sas}}" alt="{{file.blob_name}}" style="width: 200px" />
+      {% endfor %}
+      <input type="submit" value="Process images" />
+    </form>
+
+
+    <!-- list box of files -->
+    <!-- <select name="files" id="files">
+    {% for file in files %}
+    <option value="{{file.blob_url}}?{{file.blob_sas}}">{{file.blob_name}}</option>
+    {% endfor %}
+</select>
+
+<br/>
+<span>
+{% for file in files %}
+    <a href="{{file.blob_url}}?{{file.blob_sas}}">{{file.blob_name}}</a>
+{% endfor %}
+</span>
+
+<br/>
+<span>
+
+    {% for file in files %}
+        <img src="{{file.blob_url}}?{{file.blob_sas}}"
+        alt="{{file.blob_name}}"
+        style="width: 200px"
+        />
+    {% endfor %}
+</span> -->
+  </body>
+</html>
