@@ -2,7 +2,15 @@ from azure.storage.blob import BlobServiceClient, generate_blob_sas, BlobSasPerm
 from datetime import datetime, timedelta
 import os
 
-from urllib.parse import urlparse, urljoin
+from urllib.parse import urlparse, urljoin, unquote
+
+
+def get_blobparts(file):
+    # {{file.blob_url}}?{{file.blob_sas}}">{{file.blob_name}}
+    urlparts = urlparse(file)
+    blob_sas = sasForBlob(file)
+    blob_name = urlparts.path.split('/')[2]
+    return {'blob_name': blob_name, 'blob_url': file, 'blob_sas': blob_sas}
 
 
 def sasForBlob(urlBlob):
@@ -27,10 +35,10 @@ def sasForBlob(urlBlob):
             container_name=container_name,
             blob_name=blob_name,
             permission=BlobSasPermissions(read=True),
-            expiry=datetime.utcnow() + timedelta(hours=1))
+            expiry=datetime.utcnow() + timedelta(hours=24))
         #use add sas_token as query string param to urlBlob
         urlBlob = urljoin(urlBlob, f'?{blob_sas}')
-        return urlBlob
+        return blob_sas
 
 
 
@@ -73,6 +81,13 @@ def uploadFile(account_name, account_key, container_name, file):
     blob_client = blob_service.get_blob_client(container_name, file.filename)
     # container_client = blob_service.get_container_client(container_name)
     # blob_client = container_client.get_blob_client(file.filename)
-    blob_client.upload_blob(data=file.stream)
+    ret_upload = blob_client.upload_blob(data=file.stream)
 
-    return None
+    #url decode the blob url
+    # blob_url = blob_client.url
+    # blob_url = urllib.parse.unquote(blob_url)
+    # blob_url = blob_url.replace(' ', '%20')
+    # blob_url = urllib.parse.quote(blob_url)
+    # blob_url = blob_url.replace('%20', ' ')
+
+    return unquote(blob_client.url)
