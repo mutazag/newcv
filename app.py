@@ -76,17 +76,7 @@ def settings():
     return render_template('settings.html', data=settings)
 
 
-@app.route('/files', methods=['GET'])
-def files():
 
-    user_files = session.get('files', [])
-    logging.info(f'files: {user_files}')
-    if type(user_files) is not list:
-        logging.info(f'user_files is not a list')
-        user_files = []
-
-    files = listFiles(BLOB_ACCOUNT, BLOB_STORAGE_KEY, BLOB_CONTAINER, 'prefix', 'delimiter')
-    return render_template('files.html', files=files)
 
 @app.route('/cart', methods=['GET'])
 def cart():
@@ -111,6 +101,29 @@ def process_cart():
     selected_images = request.form.getlist('selected-images')
     logging.info(f'selected_images: {selected_images}')
     return '', 204
+
+
+@app.route('/cartv2', methods=['GET'])
+def cartv2():
+    return render_template('cartv2.html')
+
+
+@app.route('/cartv2', methods=['POST'])
+def cartv2_post():
+    selected_items = request.form.getlist('listofitems')
+    return '', 204
+
+@app.route('/files', methods=['GET'])
+def files():
+
+    user_files = session.get('files', [])
+    logging.info(f'files: {user_files}')
+    if type(user_files) is not list:
+        logging.info(f'user_files is not a list')
+        user_files = []
+
+    files = listFiles(BLOB_ACCOUNT, BLOB_STORAGE_KEY, BLOB_CONTAINER, 'prefix', 'delimiter')
+    return render_template('files.html', files=files)
 
 @app.route('/files', methods=['POST'])
 def upload_file():
