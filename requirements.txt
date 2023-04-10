@@ -2,3 +2,5 @@ Flask==2.0.2
 python-dotenv
 flask-dropzone
 azure-storage-blob>=12.14.1
+pillow>=9.4.0
+pandas>=1.5.3
