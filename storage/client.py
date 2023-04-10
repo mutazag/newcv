@@ -21,7 +21,8 @@ def sasForBlob(urlBlob):
     # get the container name
     container_name = urlparts.path.split('/')[1]
     # get the blob name
-    blob_name = urlparts.path.split('/')[2]
+    blob_name = urlparts.path.removeprefix(f'/{container_name}/')
+
 
     # return the sas token
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT')
@@ -36,11 +37,10 @@ def sasForBlob(urlBlob):
             blob_name=blob_name,
             permission=BlobSasPermissions(read=True),
             expiry=datetime.utcnow() + timedelta(hours=24))
-        #use add sas_token as query string param to urlBlob
+
+        # use add sas_token as query string param to urlBlob
         urlBlob = urljoin(urlBlob, f'?{blob_sas}')
         return blob_sas
-
-
 
     else:
         return urlBlob
@@ -72,6 +72,23 @@ def listFiles(account_name, account_key, container_name, prefix=None, delimiter=
     return list1
 
 
+def uploadLocalFile(filepath):
+
+    account_name = os.environ.get('BLOB_ACCOUNT')
+    account_key = os.environ.get('BLOB_STORAGE_KEY')
+    container_name = os.environ.get('BLOB_CONTAINER')
+
+    blob_service = BlobServiceClient(
+        account_url=f"https://{account_name}.blob.core.windows.net/",
+        credential=account_key)
+
+    blob_client = blob_service.get_blob_client(container_name, filepath)
+
+    with open(filepath, "rb") as data:
+        ret_upload = blob_client.upload_blob(data=data, overwrite=True)
+
+    return unquote(blob_client.url)
+
 
 def uploadFile(account_name, account_key, container_name, file):
     #https://www.c-sharpcorner.com/article/uploading-file-to-azure-blob-using-python/#:~:text=Uploading%20File%20To%20Azure%20Blob%20Using%20Python%201,Blob%20...%204%20File%20In%20Azure%20Blob%20
@@ -81,7 +98,7 @@ def uploadFile(account_name, account_key, container_name, file):
     blob_client = blob_service.get_blob_client(container_name, file.filename)
     # container_client = blob_service.get_container_client(container_name)
     # blob_client = container_client.get_blob_client(file.filename)
-    ret_upload = blob_client.upload_blob(data=file.stream)
+    ret_upload = blob_client.upload_blob(data=file.stream, overwrite=True)
 
     #url decode the blob url
     # blob_url = blob_client.url
