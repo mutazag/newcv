@@ -72,7 +72,7 @@ def listFiles(account_name, account_key, container_name, prefix=None, delimiter=
     return list1
 
 
-def uploadLocalFile(filepath):
+def uploadLocalFile(filepath, remotepath=None):
 
     account_name = os.environ.get('BLOB_ACCOUNT')
     account_key = os.environ.get('BLOB_STORAGE_KEY')
@@ -82,7 +82,11 @@ def uploadLocalFile(filepath):
         account_url=f"https://{account_name}.blob.core.windows.net/",
         credential=account_key)
 
-    blob_client = blob_service.get_blob_client(container_name, filepath)
+    if remotepath is None:
+        blob_client = blob_service.get_blob_client(container_name, filepath)
+    else:
+        filename = os.path.basename(filepath)
+        blob_client = blob_service.get_blob_client(container_name, f'{remotepath}/{filename}')
 
     with open(filepath, "rb") as data:
         ret_upload = blob_client.upload_blob(data=data, overwrite=True)

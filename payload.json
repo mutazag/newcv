@@ -1,0 +1,30 @@
+{
+    "ShelfInfos" : [
+        {
+            "ImageLocations" : [
+               {
+       "url": "https://godzillasinastorage.blob.core.windows.net/cv4/20230402_124740.jpg?sp=r&st=2023-04-05T22:07:23Z&se=2024-05-02T06:07:23Z&spr=https&sv=2021-12-02&sr=b&sig=EHsxofi0HICBQxChvqjmaIy7x84az23XJZmXagR3qjY%3D"
+     },
+     {
+       "url": "https://godzillasinastorage.blob.core.windows.net/cv4/20230402_124745.jpg?sp=r&st=2023-04-05T22:08:41Z&se=2024-04-06T06:08:41Z&spr=https&sv=2021-12-02&sr=b&sig=G3V2wlmrTRi3GsJfUtKXVXzVC%2FDqdBbfenlaVAOnkQM%3D"
+     },
+     {
+       "url": "https://godzillasinastorage.blob.core.windows.net/cv4/20230402_124750.jpg?sp=r&st=2023-04-05T22:09:17Z&se=2024-04-06T06:09:17Z&spr=https&sv=2021-12-02&sr=b&sig=c0uHelOsAD92IMW7Xevqod6%2B85NEn33wFl3rPgGjm2Q%3D"
+     },
+     {
+       "url": "https://godzillasinastorage.blob.core.windows.net/cv4/20230402_124759.jpg?sp=r&st=2023-04-05T22:09:46Z&se=2024-04-06T06:09:46Z&spr=https&sv=2021-12-02&sr=b&sig=a9TudXzTNQj9We%2B1PWbtPDdwJSACR%2BT%2BReq9yNT%2BMeo%3D"
+     },
+     {
+       "url": "https://godzillasinastorage.blob.core.windows.net/cv4/20230402_124804.jpg?sp=r&st=2023-04-05T22:10:15Z&se=2024-04-06T06:10:15Z&spr=https&sv=2021-12-02&sr=b&sig=EshHPR4GCgpuczOIquOy%2FENAMtHPs6xsvX1gDsreA2o%3D"
+     },
+     {
+       "url": "https://godzillasinastorage.blob.core.windows.net/cv4/20230402_124808.jpg?sp=r&st=2023-04-05T22:10:42Z&se=2024-04-06T06:10:42Z&spr=https&sv=2021-12-02&sr=b&sig=lKh8B06L9R3KBQTRd0cvhBXwA%2BkQOUonii2lOeP0ym8%3D"
+     }
+            ],
+             "Shelf" : {
+                 "ShelfName" : "Shelf No 1",
+                 "Asile" : "Asile 1"
+             }
+        }
+    ]
+ }
