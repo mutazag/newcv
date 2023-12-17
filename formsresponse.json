@@ -1,0 +1,1054 @@
+{
+    "status": "succeeded",
+    "createdDateTime": "2023-06-07T07:21:19Z",
+    "lastUpdatedDateTime": "2023-06-07T07:21:20Z",
+    "analyzeResult": {
+        "apiVersion": "2022-06-30-preview",
+        "modelId": "prebuilt-read",
+        "stringIndexType": "textElements",
+        "content": "Code 39\nPDF417\nBarcode Type Example\nQR Code\nCode 128\nUPC (UPC-A & UPC-E)\n0123456789ABC\n0123456789abcdefg\nForm Recognizer\nForm Recognizer\n:barcode:\n:barcode:\n:barcode:",
+        "pages": [
+            {
+                "pageNumber": 1,
+                "angle": 0,
+                "width": 1096,
+                "height": 994,
+                "unit": "pixel",
+                "words": [
+                    {
+                        "content": "Code",
+                        "polygon": [
+                            42,
+                            282,
+                            89,
+                            282,
+                            89,
+                            302,
+                            42,
+                            303
+                        ],
+                        "confidence": 0.993,
+                        "span": {
+                            "offset": 0,
+                            "length": 4
+                        }
+                    },
+                    {
+                        "content": "39",
+                        "polygon": [
+                            96,
+                            282,
+                            119,
+                            282,
+                            118,
+                            303,
+                            96,
+                            302
+                        ],
+                        "confidence": 0.984,
+                        "span": {
+                            "offset": 5,
+                            "length": 2
+                        }
+                    },
+                    {
+                        "content": "PDF417",
+                        "polygon": [
+                            42,
+                            823,
+                            113,
+                            822,
+                            114,
+                            845,
+                            42,
+                            844
+                        ],
+                        "confidence": 0.994,
+                        "span": {
+                            "offset": 8,
+                            "length": 6
+                        }
+                    },
+                    {
+                        "content": "Barcode",
+                        "polygon": [
+                            41,
+                            36,
+                            120,
+                            37,
+                            120,
+                            60,
+                            41,
+                            60
+                        ],
+                        "confidence": 0.988,
+                        "span": {
+                            "offset": 15,
+                            "length": 7
+                        }
+                    },
+                    {
+                        "content": "Type",
+                        "polygon": [
+                            126,
+                            37,
+                            172,
+                            37,
+                            171,
+                            60,
+                            126,
+                            60
+                        ],
+                        "confidence": 0.993,
+                        "span": {
+                            "offset": 23,
+                            "length": 4
+                        }
+                    },
+                    {
+                        "content": "Example",
+                        "polygon": [
+                            312,
+                            36,
+                            395,
+                            37,
+                            394,
+                            59,
+                            312,
+                            60
+                        ],
+                        "confidence": 0.995,
+                        "span": {
+                            "offset": 28,
+                            "length": 7
+                        }
+                    },
+                    {
+                        "content": "QR",
+                        "polygon": [
+                            41,
+                            93,
+                            67,
+                            94,
+                            67,
+                            114,
+                            41,
+                            114
+                        ],
+                        "confidence": 0.994,
+                        "span": {
+                            "offset": 36,
+                            "length": 2
+                        }
+                    },
+                    {
+                        "content": "Code",
+                        "polygon": [
+                            76,
+                            94,
+                            123,
+                            93,
+                            124,
+                            113,
+                            77,
+                            113
+                        ],
+                        "confidence": 0.993,
+                        "span": {
+                            "offset": 39,
+                            "length": 4
+                        }
+                    },
+                    {
+                        "content": "Code",
+                        "polygon": [
+                            41,
+                            439,
+                            90,
+                            439,
+                            90,
+                            460,
+                            41,
+                            460
+                        ],
+                        "confidence": 0.986,
+                        "span": {
+                            "offset": 44,
+                            "length": 4
+                        }
+                    },
+                    {
+                        "content": "128",
+                        "polygon": [
+                            99,
+                            439,
+                            131,
+                            438,
+                            130,
+                            460,
+                            98,
+                            460
+                        ],
+                        "confidence": 0.996,
+                        "span": {
+                            "offset": 49,
+                            "length": 3
+                        }
+                    },
+                    {
+                        "content": "UPC",
+                        "polygon": [
+                            42,
+                            601,
+                            80,
+                            600,
+                            80,
+                            624,
+                            42,
+                            625
+                        ],
+                        "confidence": 0.995,
+                        "span": {
+                            "offset": 53,
+                            "length": 3
+                        }
+                    },
+                    {
+                        "content": "(UPC-A",
+                        "polygon": [
+                            85,
+                            600,
+                            153,
+                            600,
+                            153,
+                            623,
+                            85,
+                            624
+                        ],
+                        "confidence": 0.994,
+                        "span": {
+                            "offset": 57,
+                            "length": 6
+                        }
+                    },
+                    {
+                        "content": "&",
+                        "polygon": [
+                            159,
+                            600,
+                            175,
+                            600,
+                            174,
+                            623,
+                            159,
+                            623
+                        ],
+                        "confidence": 0.961,
+                        "span": {
+                            "offset": 64,
+                            "length": 1
+                        }
+                    },
+                    {
+                        "content": "UPC-E)",
+                        "polygon": [
+                            182,
+                            600,
+                            250,
+                            600,
+                            249,
+                            624,
+                            182,
+                            623
+                        ],
+                        "confidence": 0.993,
+                        "span": {
+                            "offset": 66,
+                            "length": 6
+                        }
+                    },
+                    {
+                        "content": "0123456789ABC",
+                        "polygon": [
+                            525,
+                            367,
+                            730,
+                            367,
+                            729,
+                            388,
+                            524,
+                            388
+                        ],
+                        "confidence": 0.986,
+                        "span": {
+                            "offset": 73,
+                            "length": 13
+                        }
+                    },
+                    {
+                        "content": "0123456789abcdefg",
+                        "polygon": [
+                            426,
+                            525,
+                            696,
+                            527,
+                            695,
+                            552,
+                            426,
+                            548
+                        ],
+                        "confidence": 0.979,
+                        "span": {
+                            "offset": 87,
+                            "length": 17
+                        }
+                    },
+                    {
+                        "content": "Form",
+                        "polygon": [
+                            342,
+                            727,
+                            427,
+                            727,
+                            427,
+                            761,
+                            341,
+                            758
+                        ],
+                        "confidence": 0.985,
+                        "span": {
+                            "offset": 105,
+                            "length": 4
+                        }
+                    },
+                    {
+                        "content": "Recognizer",
+                        "polygon": [
+                            459,
+                            727,
+                            696,
+                            728,
+                            696,
+                            764,
+                            459,
+                            762
+                        ],
+                        "confidence": 0.993,
+                        "span": {
+                            "offset": 110,
+                            "length": 10
+                        }
+                    },
+                    {
+                        "content": "Form",
+                        "polygon": [
+                            345,
+                            882,
+                            411,
+                            882,
+                            411,
+                            926,
+                            345,
+                            922
+                        ],
+                        "confidence": 0.993,
+                        "span": {
+                            "offset": 121,
+                            "length": 4
+                        }
+                    },
+                    {
+                        "content": "Recognizer",
+                        "polygon": [
+                            420,
+                            883,
+                            585,
+                            886,
+                            585,
+                            932,
+                            420,
+                            926
+                        ],
+                        "confidence": 0.991,
+                        "span": {
+                            "offset": 126,
+                            "length": 10
+                        }
+                    }
+                ],
+                "lines": [
+                    {
+                        "content": "Code 39",
+                        "polygon": [
+                            41,
+                            282,
+                            121,
+                            281,
+                            121,
+                            302,
+                            41,
+                            303
+                        ],
+                        "spans": [
+                            {
+                                "offset": 0,
+                                "length": 7
+                            }
+                        ]
+                    },
+                    {
+                        "content": "PDF417",
+                        "polygon": [
+                            41,
+                            822,
+                            115,
+                            821,
+                            115,
+                            844,
+                            41,
+                            844
+                        ],
+                        "spans": [
+                            {
+                                "offset": 8,
+                                "length": 6
+                            }
+                        ]
+                    },
+                    {
+                        "content": "Barcode Type",
+                        "polygon": [
+                            41,
+                            35,
+                            172,
+                            36,
+                            172,
+                            59,
+                            41,
+                            59
+                        ],
+                        "spans": [
+                            {
+                                "offset": 15,
+                                "length": 12
+                            }
+                        ]
+                    },
+                    {
+                        "content": "Example",
+                        "polygon": [
+                            312,
+                            36,
+                            394,
+                            36,
+                            394,
+                            59,
+                            312,
+                            59
+                        ],
+                        "spans": [
+                            {
+                                "offset": 28,
+                                "length": 7
+                            }
+                        ]
+                    },
+                    {
+                        "content": "QR Code",
+                        "polygon": [
+                            41,
+                            93,
+                            126,
+                            93,
+                            126,
+                            113,
+                            41,
+                            113
+                        ],
+                        "spans": [
+                            {
+                                "offset": 36,
+                                "length": 7
+                            }
+                        ]
+                    },
+                    {
+                        "content": "Code 128",
+                        "polygon": [
+                            41,
+                            438,
+                            131,
+                            438,
+                            131,
+                            459,
+                            41,
+                            460
+                        ],
+                        "spans": [
+                            {
+                                "offset": 44,
+                                "length": 8
+                            }
+                        ]
+                    },
+                    {
+                        "content": "UPC (UPC-A & UPC-E)",
+                        "polygon": [
+                            41,
+                            600,
+                            249,
+                            599,
+                            249,
+                            623,
+                            41,
+                            624
+                        ],
+                        "spans": [
+                            {
+                                "offset": 53,
+                                "length": 19
+                            }
+                        ]
+                    },
+                    {
+                        "content": "0123456789ABC",
+                        "polygon": [
+                            524,
+                            366,
+                            730,
+                            366,
+                            730,
+                            388,
+                            524,
+                            388
+                        ],
+                        "spans": [
+                            {
+                                "offset": 73,
+                                "length": 13
+                            }
+                        ]
+                    },
+                    {
+                        "content": "0123456789abcdefg",
+                        "polygon": [
+                            425,
+                            525,
+                            698,
+                            526,
+                            698,
+                            551,
+                            425,
+                            548
+                        ],
+                        "spans": [
+                            {
+                                "offset": 87,
+                                "length": 17
+                            }
+                        ]
+                    },
+                    {
+                        "content": "Form Recognizer",
+                        "polygon": [
+                            341,
+                            726,
+                            696,
+                            727,
+                            696,
+                            764,
+                            341,
+                            761
+                        ],
+                        "spans": [
+                            {
+                                "offset": 105,
+                                "length": 15
+                            }
+                        ]
+                    },
+                    {
+                        "content": "Form Recognizer",
+                        "polygon": [
+                            345,
+                            881,
+                            586,
+                            885,
+                            585,
+                            931,
+                            345,
+                            923
+                        ],
+                        "spans": [
+                            {
+                                "offset": 121,
+                                "length": 15
+                            }
+                        ]
+                    }
+                ],
+                "barcodes": [
+                    {
+                        "kind": "Code128",
+                        "value": "0123456789abcdefg",
+                        "span": {
+                            "offset": 137,
+                            "length": 9
+                        },
+                        "polygon": [
+                            336,
+                            453,
+                            786,
+                            453,
+                            786,
+                            526,
+                            336,
+                            526
+                        ],
+                        "confidence": 1
+                    },
+                    {
+                        "kind": "UPCA",
+                        "value": "123456789999",
+                        "span": {
+                            "offset": 147,
+                            "length": 9
+                        },
+                        "polygon": [
+                            339,
+                            617,
+                            698,
+                            617,
+                            699,
+                            706,
+                            339,
+                            706
+                        ],
+                        "confidence": 1
+                    },
+                    {
+                        "kind": "PDF417",
+                        "value": "Form Recognizer",
+                        "span": {
+                            "offset": 157,
+                            "length": 9
+                        },
+                        "polygon": [
+                            384,
+                            835,
+                            645,
+                            835,
+                            645,
+                            880,
+                            384,
+                            880
+                        ],
+                        "confidence": 1
+                    }
+                ],
+                "spans": [
+                    {
+                        "offset": 0,
+                        "length": 166
+                    }
+                ],
+                "kind": "document"
+            }
+        ],
+        "paragraphs": [
+            {
+                "spans": [
+                    {
+                        "offset": 137,
+                        "length": 9
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            336,
+                            453,
+                            786,
+                            453,
+                            786,
+                            526,
+                            336,
+                            526
+                        ]
+                    }
+                ],
+                "content": ":barcode:"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 147,
+                        "length": 9
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            339,
+                            617,
+                            698,
+                            617,
+                            699,
+                            706,
+                            339,
+                            706
+                        ]
+                    }
+                ],
+                "content": ":barcode:"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 157,
+                        "length": 9
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            384,
+                            835,
+                            645,
+                            835,
+                            645,
+                            880,
+                            384,
+                            880
+                        ]
+                    }
+                ],
+                "content": ":barcode:"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 0,
+                        "length": 7
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            41,
+                            282,
+                            121,
+                            281,
+                            121,
+                            302,
+                            41,
+                            303
+                        ]
+                    }
+                ],
+                "content": "Code 39"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 8,
+                        "length": 6
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            41,
+                            821,
+                            115,
+                            821,
+                            115,
+                            844,
+                            41,
+                            844
+                        ]
+                    }
+                ],
+                "content": "PDF417"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 15,
+                        "length": 20
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            41,
+                            35,
+                            394,
+                            35,
+                            394,
+                            59,
+                            41,
+                            59
+                        ]
+                    }
+                ],
+                "content": "Barcode Type Example"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 36,
+                        "length": 7
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            41,
+                            93,
+                            126,
+                            93,
+                            126,
+                            113,
+                            41,
+                            113
+                        ]
+                    }
+                ],
+                "content": "QR Code"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 44,
+                        "length": 8
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            41,
+                            438,
+                            131,
+                            438,
+                            131,
+                            460,
+                            41,
+                            460
+                        ]
+                    }
+                ],
+                "content": "Code 128"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 53,
+                        "length": 19
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            41,
+                            600,
+                            249,
+                            599,
+                            249,
+                            623,
+                            41,
+                            624
+                        ]
+                    }
+                ],
+                "content": "UPC (UPC-A & UPC-E)"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 73,
+                        "length": 13
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            524,
+                            366,
+                            730,
+                            366,
+                            730,
+                            388,
+                            524,
+                            388
+                        ]
+                    }
+                ],
+                "content": "0123456789ABC"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 87,
+                        "length": 17
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            425,
+                            525,
+                            698,
+                            526,
+                            698,
+                            551,
+                            425,
+                            550
+                        ]
+                    }
+                ],
+                "content": "0123456789abcdefg"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 105,
+                        "length": 15
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            341,
+                            726,
+                            696,
+                            727,
+                            696,
+                            764,
+                            341,
+                            763
+                        ]
+                    }
+                ],
+                "content": "Form Recognizer"
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 121,
+                        "length": 15
+                    }
+                ],
+                "boundingRegions": [
+                    {
+                        "pageNumber": 1,
+                        "polygon": [
+                            345,
+                            880,
+                            586,
+                            885,
+                            585,
+                            931,
+                            344,
+                            926
+                        ]
+                    }
+                ],
+                "content": "Form Recognizer"
+            }
+        ],
+        "styles": [],
+        "languages": [
+            {
+                "spans": [
+                    {
+                        "offset": 0,
+                        "length": 7
+                    },
+                    {
+                        "offset": 28,
+                        "length": 7
+                    },
+                    {
+                        "offset": 44,
+                        "length": 8
+                    }
+                ],
+                "locale": "en",
+                "confidence": 1
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 8,
+                        "length": 19
+                    }
+                ],
+                "locale": "en",
+                "confidence": 0.95
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 36,
+                        "length": 7
+                    }
+                ],
+                "locale": "en",
+                "confidence": 0.6
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 53,
+                        "length": 19
+                    }
+                ],
+                "locale": "hr",
+                "confidence": 0.7
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 73,
+                        "length": 13
+                    }
+                ],
+                "locale": "rhi",
+                "confidence": 0.95
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 87,
+                        "length": 17
+                    }
+                ],
+                "locale": "af",
+                "confidence": 0.99
+            },
+            {
+                "spans": [
+                    {
+                        "offset": 105,
+                        "length": 31
+                    }
+                ],
+                "locale": "en",
+                "confidence": 0.8
+            }
+        ]
+    }
+}

@@ -1,0 +1,552 @@
+{
+    "status": "succeeded",
+    "createdDateTime": "2023-06-07T07:21:02Z",
+    "lastUpdatedDateTime": "2023-06-07T07:21:03Z",
+    "analyzeResult": {
+        "version": "3.2.0",
+        "modelVersion": "2022-04-30",
+        "readResults": [
+            {
+                "page": 1,
+                "angle": 0.1184,
+                "width": 1096,
+                "height": 994,
+                "unit": "pixel",
+                "lines": [
+                    {
+                        "boundingBox": [
+                            40,
+                            34,
+                            172,
+                            36,
+                            171,
+                            61,
+                            40,
+                            58
+                        ],
+                        "text": "Barcode Type",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    41,
+                                    35,
+                                    118,
+                                    35,
+                                    117,
+                                    60,
+                                    40,
+                                    58
+                                ],
+                                "text": "Barcode",
+                                "confidence": 0.994
+                            },
+                            {
+                                "boundingBox": [
+                                    122,
+                                    35,
+                                    170,
+                                    36,
+                                    170,
+                                    62,
+                                    122,
+                                    60
+                                ],
+                                "text": "Type",
+                                "confidence": 0.989
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            313,
+                            35,
+                            394,
+                            36,
+                            394,
+                            59,
+                            313,
+                            57
+                        ],
+                        "text": "Example",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    314,
+                                    35,
+                                    394,
+                                    36,
+                                    394,
+                                    59,
+                                    314,
+                                    57
+                                ],
+                                "text": "Example",
+                                "confidence": 0.996
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            39,
+                            93,
+                            127,
+                            92,
+                            127,
+                            113,
+                            39,
+                            114
+                        ],
+                        "text": "QR Code",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    41,
+                                    93,
+                                    68,
+                                    93,
+                                    68,
+                                    115,
+                                    40,
+                                    114
+                                ],
+                                "text": "QR",
+                                "confidence": 0.997
+                            },
+                            {
+                                "boundingBox": [
+                                    74,
+                                    93,
+                                    125,
+                                    93,
+                                    124,
+                                    114,
+                                    73,
+                                    114
+                                ],
+                                "text": "Code",
+                                "confidence": 0.99
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            39,
+                            281,
+                            120,
+                            280,
+                            120,
+                            304,
+                            39,
+                            305
+                        ],
+                        "text": "Code 39",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    39,
+                                    282,
+                                    89,
+                                    281,
+                                    89,
+                                    305,
+                                    39,
+                                    305
+                                ],
+                                "text": "Code",
+                                "confidence": 0.989
+                            },
+                            {
+                                "boundingBox": [
+                                    94,
+                                    281,
+                                    120,
+                                    281,
+                                    119,
+                                    305,
+                                    94,
+                                    305
+                                ],
+                                "text": "39",
+                                "confidence": 0.993
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            523,
+                            366,
+                            733,
+                            366,
+                            733,
+                            387,
+                            523,
+                            387
+                        ],
+                        "text": "0123456789ABC",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    523,
+                                    367,
+                                    728,
+                                    366,
+                                    728,
+                                    388,
+                                    523,
+                                    388
+                                ],
+                                "text": "0123456789ABC",
+                                "confidence": 0.991
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            40,
+                            438,
+                            132,
+                            438,
+                            132,
+                            461,
+                            40,
+                            461
+                        ],
+                        "text": "Code 128",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    41,
+                                    439,
+                                    91,
+                                    439,
+                                    91,
+                                    461,
+                                    40,
+                                    461
+                                ],
+                                "text": "Code",
+                                "confidence": 0.989
+                            },
+                            {
+                                "boundingBox": [
+                                    96,
+                                    439,
+                                    131,
+                                    439,
+                                    131,
+                                    462,
+                                    96,
+                                    461
+                                ],
+                                "text": "128",
+                                "confidence": 0.998
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            424,
+                            525,
+                            696,
+                            527,
+                            696,
+                            549,
+                            424,
+                            547
+                        ],
+                        "text": "0123456789abcdefg",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    425,
+                                    526,
+                                    693,
+                                    528,
+                                    693,
+                                    550,
+                                    425,
+                                    548
+                                ],
+                                "text": "0123456789abcdefg",
+                                "confidence": 0.991
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            39,
+                            600,
+                            247,
+                            598,
+                            247,
+                            621,
+                            39,
+                            623
+                        ],
+                        "text": "UPC (UPC-A & UPC-E)",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    41,
+                                    600,
+                                    79,
+                                    601,
+                                    78,
+                                    623,
+                                    40,
+                                    623
+                                ],
+                                "text": "UPC",
+                                "confidence": 0.994
+                            },
+                            {
+                                "boundingBox": [
+                                    85,
+                                    601,
+                                    151,
+                                    600,
+                                    150,
+                                    623,
+                                    84,
+                                    623
+                                ],
+                                "text": "(UPC-A",
+                                "confidence": 0.997
+                            },
+                            {
+                                "boundingBox": [
+                                    157,
+                                    600,
+                                    172,
+                                    600,
+                                    171,
+                                    623,
+                                    157,
+                                    623
+                                ],
+                                "text": "&",
+                                "confidence": 0.981
+                            },
+                            {
+                                "boundingBox": [
+                                    180,
+                                    600,
+                                    246,
+                                    599,
+                                    246,
+                                    622,
+                                    179,
+                                    623
+                                ],
+                                "text": "UPC-E)",
+                                "confidence": 0.997
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            340,
+                            729,
+                            438,
+                            732,
+                            437,
+                            761,
+                            340,
+                            757
+                        ],
+                        "text": "Form",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    340,
+                                    729,
+                                    423,
+                                    732,
+                                    424,
+                                    761,
+                                    340,
+                                    758
+                                ],
+                                "text": "Form",
+                                "confidence": 0.988
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            457,
+                            729,
+                            698,
+                            729,
+                            698,
+                            763,
+                            456,
+                            762
+                        ],
+                        "text": "Recognizer",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    458,
+                                    730,
+                                    694,
+                                    730,
+                                    693,
+                                    764,
+                                    457,
+                                    762
+                                ],
+                                "text": "Recognizer",
+                                "confidence": 0.992
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            39,
+                            822,
+                            113,
+                            822,
+                            113,
+                            844,
+                            39,
+                            844
+                        ],
+                        "text": "PDF417",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    40,
+                                    822,
+                                    112,
+                                    822,
+                                    110,
+                                    844,
+                                    39,
+                                    843
+                                ],
+                                "text": "PDF417",
+                                "confidence": 0.996
+                            }
+                        ]
+                    },
+                    {
+                        "boundingBox": [
+                            343,
+                            883,
+                            584,
+                            884,
+                            584,
+                            929,
+                            343,
+                            927
+                        ],
+                        "text": "Form Recognizer",
+                        "appearance": {
+                            "style": {
+                                "name": "other",
+                                "confidence": 0.972
+                            }
+                        },
+                        "words": [
+                            {
+                                "boundingBox": [
+                                    345,
+                                    885,
+                                    410,
+                                    884,
+                                    410,
+                                    928,
+                                    344,
+                                    927
+                                ],
+                                "text": "Form",
+                                "confidence": 0.989
+                            },
+                            {
+                                "boundingBox": [
+                                    419,
+                                    884,
+                                    583,
+                                    886,
+                                    584,
+                                    929,
+                                    418,
+                                    928
+                                ],
+                                "text": "Recognizer",
+                                "confidence": 0.994
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
